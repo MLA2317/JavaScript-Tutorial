@@ -1,0 +1,5 @@
+console.log('Hello world')
+console.log('Helloooo')
+console.log("1" + "4" + 3)
+console.error("Qanaqadur catolik")
+console.warn("Warning")
