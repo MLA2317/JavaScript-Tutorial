@@ -170,3 +170,342 @@
 // }
 //
 // console.log(testLessOrEqual(54))
+
+
+
+// And & Or Operator
+
+// Comparisons with the Logical And Operator - Mantiqiy va operator bilan taqqoslash
+
+function testLogicalAnd(val) {
+    if(val <= 50 && val >= 25) {
+        return "Yes"
+    }
+    return "No"
+}
+
+console.log(testLogicalAnd(33))
+
+
+//  Comparisons with the Logical Or Operator -  Mantiqiy yoki operator bilan taqqoslash
+
+function testLogicalOr(val){
+    if(val < 10 || val > 20) {
+        return "Inside"
+    }
+    return "Outside"
+}
+
+console.log(testLogicalOr(15))
+
+
+
+
+// Else Statements - Aks Holda bayonotlar
+
+function testElse(val){
+    var result = "";
+
+    if(val > 5){
+        result = "Bigger than 5";
+    } else{
+        result = "5 or Smaller";
+    }
+    return result;
+}
+console.log(testElse(6))
+
+
+
+// Else If Statement
+
+function testElseIf(val){
+    if(val > 10){
+        return "Greater than 10";
+    } else if(val < 5){
+        return "Smaller than 5";
+    } else{
+        return "Between 5 and 10";
+    }
+}
+console.log(testElseIf(8))
+
+
+// Logical Order in If ELse Statements
+
+function ordermyLogic(val){
+    if(val < 5){
+        return "Less than 5";
+    } else if (val < 10){
+        return "Less than 10";
+    } else{
+        return "Greater than or equal to 10";
+    }
+}
+console.log(ordermyLogic(12))
+
+
+
+// Chaining If ELse Statements
+
+function testSize(val){
+    if(val < 5){
+        return "Tiny";
+    }else if(val < 10){
+        return "Small";
+    }else if(val < 15){
+        return "Medium";
+    }else if(val < 20){
+        return "Large";
+    }
+    return "Huge"
+}
+console.log(testSize(15))
+
+
+
+// Golf code
+
+var names = ["Hole in one", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go, Home"]
+
+function golfScore(par, strokes){
+    if(strokes == 1){
+        return names[0];
+    }else if(strokes <= par - 2){
+        return names[1];
+    }else if(strokes == par - 1){
+        return names[2];
+    }else if(strokes == par){
+        return names[3];
+    }else if(strokes == par + 1){
+        return names[4];
+    }else if(strokes == par + 2){
+        return names[5];
+    }else if(strokes == par + 3){
+        return names[6]
+    }
+}
+
+console.log(golfScore(3, 6))
+
+
+
+// Switch Statements
+
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+
+// function caseInSwitch(val){
+//     console.log("Enter number between 1  4")
+//     var answer = "";
+//     switch (val){
+//         case 1:
+//             answer = "alpha";
+//             break;
+//         case 2:
+//             answer = "beta";
+//             break;
+//         case 3:
+//             answer = "gamma";
+//             break;
+//         case 4:
+//             answer = "delta";
+//             break;
+//
+//         default:
+//             answer = "Invalid choice!";
+//             break;
+//
+//     }
+//     return answer;
+// }
+//
+// rl.question("Enter a number between 1 and 4: ", function(input) {
+//     const val = parseInt(input);
+//     console.log(caseInSwitch(val));
+//     rl.close();
+// });
+
+
+function caseInSwitch(val){
+    console.log("Enter number between 1  4")
+    var answer = "";
+    switch (val){
+        case 1:
+            answer = "alpha";
+            break;
+        case 2:
+            answer = "beta";
+            break;
+        case 3:
+            answer = "gamma";
+            break;
+        case 4:
+            answer = "delta";
+            break;
+
+    }
+    return answer;
+}
+console.log(caseInSwitch(3))
+
+
+
+
+// Default Option in Switch Statements - Swith bayonotlaridagi standart varianti
+
+function switchOfStuff(val){
+    var answer = "";
+    switch (val){
+        case "a":
+            answer = "apple";
+            break;
+        case "b":
+            answer = "bird";
+            break;
+        case "c":
+            answer = "cat";
+            break;
+        default:
+            answer = "stuff";
+            break
+    }
+    return answer;
+}
+console.log(switchOfStuff("c"))
+
+
+
+
+// Multiple Identical Options in Switch Statements - Switch bayonotlarida bir nechta bir xil variantlar
+
+function sequentialSizes(val){
+    var answer = "";
+    switch (val){
+        case 1:
+        case 2:
+        case 3:
+            answer = "Low";
+            break
+        case 4:
+        case 5:
+        case 6:
+            answer = "Mid";
+            break
+        case 7:
+        case 8:
+        case 9:
+            answer = "High";
+            break
+    }
+    return answer;
+}
+console.log(sequentialSizes(3))
+
+
+
+
+// Replacing If Else Chains with Switch - If else zanjirlarini kalit bn almashishtirish
+
+function chainsToSwitch(val){
+    var answer = "";
+
+    // if(val === "bob") {
+    //     answer = "Siroch";
+    // } else if(val === 21){
+    //     answer = "The Answer";
+    // } else if(val === 1) {
+    //     answer = "There is no #1";
+    // } else if(val === 99){
+    //     answer = "Missed me by this much";
+    // } else if(val === 7){
+    //     answer = "Good";
+    // }
+    // return answer
+
+    switch (val){
+        case "bob":
+            answer = "Siroch";
+            break;
+        case 42:
+            answer = "The Answer";
+            break;
+        case 1:
+            answer = "There is no #1";
+            break;
+        case 99:
+            answer = "Missed me by this much";
+            break;
+        case 7:
+            answer = "Good";
+            break;
+    }
+    return answer
+}
+console.log(chainsToSwitch("bob"))
+
+
+
+
+
+// Returning Boolean Values from Function - Funksiya mantiqiy qiymatlarni qaytarish
+
+
+function isLess(a, b){
+    return a < b;
+}
+console.log(isLess(3,4))
+
+
+
+// Returning Early Pattern from Function - Funksiyalardan dastlabki namunani qaytarish
+
+ function abTest(a, b){
+    if (a < 0 || b < 0){
+        return undefined;
+    }
+    return  Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+ }
+ console.log(abTest(2, 2))
+
+
+
+
+// Counting Cards - hisoblash kartalari
+
+var count = 0;
+
+function cc(card){
+    switch (card){
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            count++;
+            break;
+        case 10:
+        case "J":
+        case "H":
+        case "Q":
+        case "A":
+            count--;
+            break
+    }
+    var holdbet = "Hold";
+    if(count > 0) {
+        holdbet = "Bet"
+    }
+
+    return count + " " + holdbet;
+}
+
+cc(2); cc('H'); cc(10); cc('H'); cc('A');
+console.log(cc(4))
+
+
