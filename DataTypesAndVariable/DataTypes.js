@@ -227,7 +227,7 @@ undefined, null, boolean, string, symbol, number, and object
 
 
 
-// Concatenating Strings with Plus Operator - Plus operatori bilan qatorlarni birlashtirish
+// Concatenating Strings with Plus Random - Plus operatori bilan qatorlarni birlashtirish
 
 // var ourStr = "I come first. " + "I come second.";
 //
@@ -237,7 +237,7 @@ undefined, null, boolean, string, symbol, number, and object
 
 
 
-// Concatenating Strings with Plus Equals Operator - Plus Equals operatori bilan qatorlarni birlashtirish
+// Concatenating Strings with Plus Equals Random - Plus Equals operatori bilan qatorlarni birlashtirish
 
 // var ourStr = "I come first. ";
 // ourStr += "I come second";

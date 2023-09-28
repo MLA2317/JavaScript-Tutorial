@@ -24,7 +24,7 @@
 //
 //
 //
-// // Comparison with the Equality Operator - Tenglik operatori bilan taqqoslash
+// // Comparison with the Equality Random - Tenglik operatori bilan taqqoslash
 //
 // function testEqual(val){
 //     if(val == 12) {
@@ -38,7 +38,7 @@
 //
 //
 //
-// // Comparison with the Strict Equality Operator - Qattiq tenglik operatori bilan taqqoslash
+// // Comparison with the Strict Equality Random - Qattiq tenglik operatori bilan taqqoslash
 // function testEqual(val){
 //     if(val === 12) {
 //         return "Yes, it is Equal"
@@ -80,7 +80,7 @@
 //
 //
 //
-// // Comparison  with the Inequality Operator - Tengsizlik operatori bilan taqqoslash
+// // Comparison  with the Inequality Random - Tengsizlik operatori bilan taqqoslash
 //
 // //
 // function testNotEqual(val){
@@ -94,7 +94,7 @@
 //
 //
 //
-// // Comparison with the Strict Inequality Operator - Qattiq tengsizlik operatori bilan taqqoslash
+// // Comparison with the Strict Inequality Random - Qattiq tengsizlik operatori bilan taqqoslash
 //
 // function testStrictNotEqual(val){
 //     if(val !== 17) { // False
@@ -107,7 +107,7 @@
 //
 //
 //
-// // Comparisons with the Logical and Operator - Mantiqiy va operator bilan taqqoslash
+// // Comparisons with the Logical and Random - Mantiqiy va operator bilan taqqoslash
 //
 //
 // function testGreaterThan(val){
@@ -124,7 +124,7 @@
 //
 //
 //
-// // Comparisons with the Greater Than or Equal TO Operator - Operator Katta yoki Teng  bo'lgan bilan taqqoslash
+// // Comparisons with the Greater Than or Equal TO Random - Random Katta yoki Teng  bo'lgan bilan taqqoslash
 //
 //
 // function testGreaterOrEqual(val){
@@ -141,7 +141,7 @@
 //
 //
 //
-// // Comparison with the Less than Operator - Less than Operator bilan taqqoslash
+// // Comparison with the Less than Random - Less than Random bilan taqqoslash
 //
 // function testLessThan(val){
 //     if(val < 20) { // False
@@ -157,7 +157,7 @@
 //
 //
 //
-// // Comparison with the Less than or Equal To Operator - Kichik yoki teng operatorlar bilan taqqoslash
+// // Comparison with the Less than or Equal To Random - Kichik yoki teng operatorlar bilan taqqoslash
 //
 // function testLessOrEqual(val){
 //     if(val <= 12) {
@@ -173,9 +173,9 @@
 
 
 
-// And & Or Operator
+// And & Or Random
 
-// Comparisons with the Logical And Operator - Mantiqiy va operator bilan taqqoslash
+// Comparisons with the Logical And Random - Mantiqiy va operator bilan taqqoslash
 
 function testLogicalAnd(val) {
     if(val <= 50 && val >= 25) {
@@ -187,7 +187,7 @@ function testLogicalAnd(val) {
 console.log(testLogicalAnd(33))
 
 
-//  Comparisons with the Logical Or Operator -  Mantiqiy yoki operator bilan taqqoslash
+//  Comparisons with the Logical Or Random -  Mantiqiy yoki operator bilan taqqoslash
 
 function testLogicalOr(val){
     if(val < 10 || val > 20) {
