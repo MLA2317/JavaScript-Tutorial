@@ -34,3 +34,44 @@ function checkScope() {
     return i
 }
 checkScope();
+
+
+
+
+
+
+// function main(){
+//     if (true){
+//         let name = "gimmic" // let faqat if ga tegishli bolgani uchun tashqaridisi oqimidi
+//     }
+//     console.log(name)
+// }
+// main()
+
+
+function mains(){
+    if (true){
+        var names = "gimmic" // var funksiyani ichidagilarni oqi oladi funksiyadan tashqari oqi olomidi
+    }
+    console.log(names)
+}
+mains()
+
+
+
+function main() {
+    for (let i = 0; i < 100; i++){
+        console.log(i + 1) // it's worked let doim ozini ichida blokida ishlatolimz
+    }
+    // console.log(i + 1) // it's error
+}
+main()
+
+
+function mains(){
+    for (var i = 0; i < 100; i++){
+
+    }
+    console.log(i) // var blockdan tashqari ishlay oladi
+}
+mains()
